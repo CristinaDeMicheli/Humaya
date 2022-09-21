@@ -4,38 +4,48 @@
   box-sizing: border-box;
 }
 
-.imagen-portada{
- width: 100%;
- height: 100%;
+header{
+background-image: url(IMAGENES/Central/imagenCentral.png);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+width: 100%;
+height: 30%;
+min-width: 780px;
+padding-bottom: 5%;
+
 }
 
+
+main{
+padding-right: 5%;
+background-color: grey;
+width: 100%;
+height: 60%;
+min-width: 780px;
+} 
+footer{
+padding-left: 5%;
+padding-right: 5%;
+background-color: pink;
+width: 100%;
+height: 30%;
+min-width: 780px;
+
+}
 .conocenos{
 background-color: black;
 color: white;
 border-radius: 20px;
 text-align: center;
-margin-left: 40%;
-display: inline-block;
-padding-top: 10px;
+margin-left: 30%;
 padding-bottom: 10px;
-padding-left: 30px;
-padding-right: 30px;
+padding-top: 10px;
+padding-left: 40px;
+padding-right: 40px;
  opacity: 0.7;
 }
 
-.info-boton{
-background-color: black;
-color: orange;
-text-align: center;
-
-display: inline-block;
-padding-top: 10px;
-padding-bottom: 10px;
-padding-left: 30px;
-padding-right: 30px;
-border-width: 2px;
-border-color: orange;
-}
 
 .principal{
   padding-top: 5%;
@@ -43,49 +53,30 @@ border-color: orange;
   text-align: justify ;
   padding-right: 30px;
   padding-left: 50%;
-  justify-content: legacy left;
   box-sizing: border-box;
+  margin-bottom: 10px;
 }
 
-.ejemplo-nav{
-  height: 50vh;
-  background-image: url(IMAGENES/Central/imagenCentral.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  object-fit: cover;
+.principal p {
+    margin-top: 0;
+    margin-bottom: 3rem;
 }
 
-.producto-titulo{
-  height: 100%;
-  background-color: #6A737C;
-  color: white;
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  
-}
-
-.calidad{
-  height: 100%;
-  background-color: #302c2c;
-  color: white;
-  text-align: center;
-  
-}
 
 .productos{
   width: 100%;
   height: 100%;
-   max-height: 600px ;
+  min-width: 780px;
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 48% 48% 48%; 
+  grid-template-rows: 48% 48% 48% 60% 48%; 
   gap: 0px;
   background-color: black; 
+  position: absolute;
 }
 
 .producto-titulo h1{
+ text-align: center;
  margin-bottom: 0px !important; 
 }
 
@@ -96,25 +87,79 @@ border-color: orange;
   background-color: black;
   word-wrap: break-word;
   text-align: center;
-  
+  align-items: center;
+  display: flex;
 }
+
+.info-boton{
+background-color: black;
+color: orange;
+text-align: center;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 30px;
+padding-right: 30px;
+border-width: 2px;
+border-color: orange;
+}
+
+.texto-contenedores{
+  word-wrap: break-word;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  margin:0px auto;
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+
 .maicena{
-  width: 100%;
-  max-width: 500px;
-  height: 100%;
-  background-image: url(IMAGENES/Productos/Producto4b.png);
-   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  object-fit: cover;
-  margin-top: 28%;
+display: grid;
+grid-template-columns: 50vw 50vw;
+width: 100%;
+height: auto;
+grid-column-start: 1;
+grid-column-end: 3;
+grid-row-start: 4;
+grid-row-end: 5;
+background-image: url(IMAGENES/Productos/Producto4b.png);
+background-attachment: inherit;
+background-size: 100% 100%;
+background-repeat: no-repeat;
 }
 
 .row-maicena{
-  width: 50%;
-  height: 100%;
-  background-color: transparent;
-  word-wrap: break-word;
-  text-align: left;
+  padding: 2.5rem;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
 
+.info{
+border: solid 2px brown;
+padding: .1rem .8rem;
+color: brown;
+font-weight: bold;
+}
+
+.row-maicena p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: justify;
+    margin-left: 1rem;
+    color: white;
+}
+
+.calidad{
+  padding-top: 5%;
+text-align: center !important;
+grid-column-start: 1; 
+grid-column-end: 3; 
+grid-row-start: 5; 
+grid-row-end: 6;
+background-color: grey;
+width: 100%;
+height: 100%;
+word-wrap: break-word;
 }
